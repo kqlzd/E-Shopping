@@ -1,0 +1,254 @@
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkslategray;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+.sag ul {
+    display: flex;
+    margin-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sag ul li {
+    list-style: none;
+    padding-inline: 25px;
+}
+
+.sag ul li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.sag ul li a:hover {
+    text-decoration: underline;
+}
+
+.sag ul li a:focus {
+    color: sienna;
+}
+
+.container {
+    width: 90%;
+    color: white;
+    margin: 250px auto;
+    height: 100%;
+}
+
+select {
+    width: 70px;
+    height: 30px;
+}
+
+.for-men {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+    height: 90px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.for-men h2 {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.for-men button {
+    height: 25px;
+    width: 60px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.for-men button:hover {
+    background-color: black;
+    color: white;
+}
+
+.for-women {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    border: 1px solid white;
+    height: 90px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: white;
+    color: black
+}
+
+.for-women h2 {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.for-women button {
+    height: 25px;
+    width: 60px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.for-women button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+/* For Phones */
+@media screen and (max-width:800px) {
+
+    nav {
+        display: flex;
+        justify-content: center;
+        font-size: small;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 35px;
+    }
+
+    .sag ul li {
+        padding-inline: 5px;
+    }
+
+    .container {
+        margin: 80px auto;
+    }
+
+    .for-men {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .for-men button {
+        margin-top: 20px;
+    }
+
+    .for-women {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 20px auto;
+    }
+
+    .for-women button {
+        margin-top: 20px;
+    }
+}
+
+/* SMALL SCREENS */
+@media screen and (max-width:400px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        font-size: 11px;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 30px;
+    }
+
+    .hero-image {
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .section {
+        display: block;
+    }
+
+    footer {
+        display: block;
+        width: 100%;
+        font-size: small;
+        height: 100%;
+    }
+
+}
+
+/* FOR IPADS */
+@media screen and (max-width:992px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        font-size: small;
+    }
+
+    .sag ul li {
+        padding-inline: 5px;
+    }
+
+    .for-men {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .for-men button {
+        margin-top: 20px;
+    }
+
+    .for-women {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .for-women button {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: steelblue;
+}
+
+.container {
+    width: 50%;
+    height: 100%;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.969);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+/* Form css */
+form {
+    margin-top: 50px;
+}
+
+.container .giris {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+label {
+    font-size: large;
+    font-family: sans-serif;
+}
+
+form a {
+    text-decoration: none;
+    color: white;
+}
+
+input {
+    display: block;
+    width: 300px;
+    height: 45px;
+    border-style: groove;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px;
+    border: 1px solid black;
+    background-color: rgba(215, 211, 211, 0.533);
+}
+
+input::placeholder {
+    color: rgba(151, 145, 145, 0.86);
+}
+
+.redirect {
+    color: rgb(81, 8, 149);
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+    font-size: larger;
+}
+
+
+button {
+    width: 300px;
+    height: 35px;
+    margin-top: 80px;
+    border-radius: 30px;
+    border: none;
+    background-color: black;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 2px 2px 20px black;
+}
+
+button:hover {
+    background-color: white;
+}
+
+
+button a:hover {
+    color: black;
+    font-weight: 800;
+}
+
+
+.logos ul {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.logos ul li {
+    font-size: 30px;
+    list-style: none;
+    padding-inline: 20px;
+}
+
+.logos ul li:hover {
+    font-size: 32px;
+}
+
+/* Logos color */
+.logos ul:nth-child(1) li:nth-child(1) i:nth-child(1) {
+    color: rgba(21, 87, 193, 0.787);
+}
+
+.logos ul:nth-child(1) li:nth-child(2) i:nth-child(1) {
+    color: #EA4335;
+}
+
+.logos ul:nth-child(1) li:nth-child(3) i:nth-child(1) {
+    color: rgba(21, 87, 193, 0.787);
+}
+
+
+/* Phones */
+@media screen and (max-width:800px) {
+
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* SMALL SCREENS */
+@media screen and (max-width:400px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Ipads */
+@media screen and (max-width:992px) {
+    .container {
+        width: 80%;
+        margin: 200px auto;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .container {
+        width: 80%;
+        margin: 300px auto;
+    }
+}
